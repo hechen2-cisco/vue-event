@@ -4,8 +4,8 @@
       <h3>Event Streams</h3>
     </v-card-title>
 
-    <!-- <v-data-table :items="desserts" :headers="headers">
-    </v-data-table> -->
+    <v-data-table :items="desserts" :headers="headers">
+    </v-data-table>
 
   </v-card>
 </template>
