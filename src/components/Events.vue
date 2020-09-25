@@ -4,7 +4,7 @@
       <h3>Event Streams</h3>
     </v-card-title>
 
-    <v-data-table :items="desserts" :headers="headers">
+    <v-data-table :headers="headers" :items="allEvents.items">
     </v-data-table>
 
   </v-card>
@@ -27,13 +27,13 @@ export default {
     headers() {
       return [
         { text: 'Event Time (Local)', value: 'timestamp' },
-        // { text: 'Talos Disposition', value: '' },
-        // { text: 'Incident', value: 'promotionStatus' },
-        // { text: 'Destination IP', value: '' },
+        { text: 'Talos Disposition', value: '' },
+        { text: 'Incident', value: 'promotionStatus' },
+        { text: 'Destination IP', value: '' },
         { text: 'Message', value: 'payload.IntrusionRuleMessage' },
         { text: 'Protocol', value: 'payload.Protocol' },
         { text: 'Reporting Device ID', value: 'deviceId'},
-        // { text: 'Actions', value: '' }
+        { text: 'Actions', value: '' }
       ]
     }
   }
