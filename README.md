@@ -32,3 +32,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Dockerize
+
+## Build Image
+`docker build -t hechen2/event -f deploy/docker/Dockerfile .`
+
+## Run Container
+`docker run -d -p 6060:80 --name event-viewer hechen2/event`
