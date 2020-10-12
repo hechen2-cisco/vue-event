@@ -1,40 +1,14 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+    <v-app-bar app color="white" light>
+      <v-img alt="Cisco Logo" src="@/assets/cisco-logo-1-300x151.png" class="shrink mr-4" width="75"/>
+      <v-toolbar-title class="text-h5 text--secondary">Event</v-toolbar-title>
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <span>
+        <v-icon class="ms-8" title="Help">mdi-help</v-icon>
+        <v-icon class="ms-8" title="Notification">mdi-bell</v-icon>
+        <v-icon class="ms-8" title="User">mdi-account</v-icon>
+      </span>
     </v-app-bar>
 
     <v-main>
